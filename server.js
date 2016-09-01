@@ -21,7 +21,7 @@ server.set('view engine', 'mustache');
 server.set('views', path.join(__dirname, 'views'));
 
 // SPECIFY STATIC ROUTE
-express.static(path.join(__dirname, 'assets'));
+server.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 // SPECIFY ROUTES MODULE
 server.use('/', mainRoute);
