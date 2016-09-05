@@ -18,7 +18,12 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "express3-handlebars": "^0.5.2",
+    "handlebars": "^4.0.5",
+    "hbs": "^4.0.0",
+    "jade": "^1.11.0",
     "mocha": "^3.0.2",
+    "pug": "^2.0.0-beta6",
     "sinon": "^1.17.5",
     "supertest": "^2.0.0"
   }

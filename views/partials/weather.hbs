@@ -1,0 +1,31 @@
+
+{{#with weather}}
+
+    <h2>{{location}}</h2>
+
+    <p>Today will be {{generalCondition}}, with daylight {{daylightHours}}</p>
+
+    <h3>Weekly Forecast</h3>
+
+    <ul>
+
+      {{#each forecast as |forecaseRef|}} <!-- use a reference -->
+
+          {{#with forecaseRef}}
+          <li>
+              <p>{{day}} {{date}}, {{text}}</p> <!-- day, date, and text are properties of forecaseRef (use of with) -->
+          </li>
+          {{/with}}
+
+      {{/each}}
+
+    </ul>
+
+    {{#each sampleObj as |sampleObjRef|}}
+
+        <p>My location: {{location}}</p>
+        <p>Parent block location: {{../location}}</p> <!-- variable from parent scope -->
+
+    {{/each}}
+
+{{/with}}

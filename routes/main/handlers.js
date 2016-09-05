@@ -1,7 +1,8 @@
 
 var index = function(req, res) {
     res.render('master', {
-        head: { title: 'Test Page Title' }
+        head: { title: 'Main Page Title' },
+        weather: "No weather report yet"
     });
 }
 

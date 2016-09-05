@@ -4,7 +4,7 @@ var utils = require('../utils.js');
 var location = function(req, res) {
     utils.getDataFromEndpoint(utils.buildUrl(req.params.location)).then(function(results) {
         res.render('master', {
-            head: { title: 'Test Page Title' },
+            head: { title: 'Weather Page Title' },
             weather: utils.buildWeatherReport(results)
         });
     });
